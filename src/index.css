@@ -30,8 +30,6 @@ body {
 }
 
 .Panel {
-  background-color: var(--color-dark);
-  height: 100%;
   padding: 2vh 3vw;
   height: 100vh;
   display: flex;
@@ -39,6 +37,20 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 20vw;
+  position: relative;
+  margin-right: 1vw;
+}
+
+.Panel * {
+  z-index: 1;
+}
+
+.Panel .panel-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .color-primary {
@@ -105,6 +117,11 @@ body {
 
 .social-button {
   height: 5vh;
+  transition: 250ms all;
+}
+
+.social-button:hover {
+  scale: 1.05;
 }
 
 .social-button img {
