@@ -53,6 +53,11 @@ body {
   left: 0;
 }
 
+.Panel .panel-bg img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .color-primary {
   color: var(--color-primary);
 }
